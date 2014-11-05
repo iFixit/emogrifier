@@ -447,7 +447,7 @@ class Emogrifier {
      * @param string $css
      * @return void
      */
-    private function addStyleElementToDocument(\DOMDocument $document, $css) {
+    protected function addStyleElementToDocument(\DOMDocument $document, $css) {
         $styleElement = $document->createElement('style', $css);
         $styleAttribute = $document->createAttribute('type');
         $styleAttribute->value = 'text/css';
